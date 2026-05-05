@@ -1,15 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
 #formularios {
   position: relative;
 }
 
-#club {
+#clubForm {
   position: absolute;
-  width: 49%;
+  width: 50%;
 }
 
-#bicicleta {
+#roboForm {
   position: absolute;
-  top: 0;
   right: 0;
-  width: 49%;
+  width: 50%;
 }

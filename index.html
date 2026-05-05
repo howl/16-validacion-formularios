@@ -9,16 +9,17 @@
 
 <body>
   <header>
-    <h1>Practica de formularios</h1>
+    <p>Practica de formularios</p>
     <p>Hago la practica de los dos formularios en el mismo archivo</p>
   </header>
   <section id="formularios">
-    <article id="club">
+    <h1>Formularios</h1>
+    <article id="clubForm">
       <header>
         <h2>Formulario 1</h2>
         <p>Registrarse en el club</p>
       </header>
-      <form action="">
+      <form id="formulario1">
         <fieldset>
           <legend>Datos personales:</legend>
           <p>
@@ -44,8 +45,8 @@
             <input type="checkbox" id="club" name="club" value="si" tabindex="5">
           </p>
           <p>
-            <label for="sobre-ti">Cuéntanos sobre ti:</label><br>
-            <textarea id="sobre-ti" name="sobre-ti" rows="10" cols="33" placeholder="Escribe aquí sobre ti"
+            <label for="sobreTi">Cuéntanos sobre ti:</label><br>
+            <textarea id="sobreTi" name="sobre-ti" rows="10" cols="33" placeholder="Escribe aquí sobre ti"
               tabindex="6"></textarea>
           </p>
         </fieldset>
@@ -56,18 +57,18 @@
             <input type="email" id="correo" name="correo" placeholder="Pon tu correo electrónico" tabindex="7">
           </p>
           <p><label for="telefono">Telefono:</label>
-            <input type="tel" if="telefono" name="telefono" tabindex="8">
+            <input type="tel" id="telefono" name="telefono" tabindex="8">
           </p>
         </fieldset>
         <p><input type="submit" value="Enviar" tabindex="9"><input type="reset" tabindex="10"></p>
       </form>
     </article>
-    <article id="bicicleta">
+    <article id="roboForm">
       <header>
         <h2>Formulario 2</h2>
         <p>Registrar el robo de la bicicleta</p>
       </header>
-      <form action="">
+      <form id="formulario2">
         <fieldset>
           <legend>Momento del robo</legend>
           <p>
@@ -147,11 +148,13 @@
               <option value="argon">Argon</option>
             </datalist>
           </p>
-        </fieldset>        
+        </fieldset>
         <p><input type="submit" value="Enviar" tabindex="18"><input type="reset" tabindex="19"></p>
       </form>
     </article>
   </section>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
