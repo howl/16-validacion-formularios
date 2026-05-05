@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Practica formulario</title>
+</head>
+
+<body>
+  <header>
+    <h1>Practica de formularios</h1>
+    <p>Hago la practica de los dos formularios en el mismo archivo</p>
+  </header>
+  <section id="formularios">
+    <article id="club">
+      <header>
+        <h2>Formulario 1</h2>
+        <p>Registrarse en el club</p>
+      </header>
+      <form action="">
+        <fieldset>
+          <legend>Datos personales:</legend>
+          <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Pon tu nombre" tabindex="1" autofocus>
+          </p>
+          <p>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Pon tus apellidos" tabindex="2">
+          </p>
+          <p>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" placeholder="Pon tu edad" tabindex="3">
+          </p>
+          <p>Sexo:
+            <input type="radio" id="masculino" name="sexo" tabindex="4">
+            <label for="masculino">M</label>
+            <input type="radio" id="femenino" name="sexo">
+            <label for="femenino">F</label>
+          </p>
+          <p>
+            <label for="club">Me siento del club:</label>
+            <input type="checkbox" id="club" name="club" value="si" tabindex="5">
+          </p>
+          <p>
+            <label for="sobre-ti">Cuéntanos sobre ti:</label><br>
+            <textarea id="sobre-ti" name="sobre-ti" rows="10" cols="33" placeholder="Escribe aquí sobre ti"
+              tabindex="6"></textarea>
+          </p>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Datos de contacto:</legend>
+          <p><label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="Pon tu correo electrónico" tabindex="7">
+          </p>
+          <p><label for="telefono">Telefono:</label>
+            <input type="tel" if="telefono" name="telefono" tabindex="8">
+          </p>
+        </fieldset>
+        <p><input type="submit" value="Enviar" tabindex="9"><input type="reset" tabindex="10"></p>
+      </form>
+    </article>
+    <article id="bicicleta">
+      <header>
+        <h2>Formulario 2</h2>
+        <p>Registrar el robo de la bicicleta</p>
+      </header>
+      <form action="">
+        <fieldset>
+          <legend>Momento del robo</legend>
+          <p>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" tabindex="11">
+          </p>
+          <p>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" tabindex="12">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Características de la bicicleta robada</legend>
+          <p>
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color" tabindex="13">
+          </p>
+          <p>
+            <label for="precio">Precio:</label>
+            <input type="range" id="precio" name="precio" tabindex="14">
+          </p>
+          <p>
+            <label for="tipo">Tipo:</label>
+            <select id="tipo" name="tipo" tabindex="15">
+              <optgroup label="Urbana">
+                <option value="clasica">Clásica</option>
+                <option value="plegable">Plegable</option>
+                <option value="electrica">Eléctrica</option>
+                <option value="commuter">Commuter</option>
+              </optgroup>
+              <optgroup label="Montaña">
+                <option value="sport">Sport</option>
+                <option value="trail">Trail o Hard Trail</option>
+                <option value="xc">XC o Cross Country</option>
+              </optgroup>
+              <optgroup label="Carreras">
+                <option value="gran-fondo">Gran Fondo</option>
+                <option value="racing">Racing</option>
+                <option value="aero">Aero</option>
+              </optgroup>
+            </select>
+          </p>
+          <p>
+            <label for="accesorios">Accesorios:</label><br>
+            <select id="accesorios" name="accesorios" multiple tabindex="16">
+              <option value="ruedines">Ruedines</option>
+              <option value="hinchadores">Hinchadores</option>
+              <option value="bomba-aire">Bomba de aire</option>
+              <option value="alforja">Alforja</option>
+              <option value="silla-portabebes">Silla portabebés</option>
+            </select>
+          </p>
+          <p>
+            <label for="marca">Marca:</label>
+            <input list="marca-datalist" id="marca" name="marca" tabindex="17">
+            <datalist id="marca-datalist">
+              <option value="specialized">Specialized</option>
+              <option value="trek">Trek</option>
+              <option value="merida">Merida</option>
+              <option value="scott">Scott</option>
+              <option value="giant">Giant</option>
+              <option value="cube">Cube</option>
+              <option value="lapierre">Lapierre</option>
+              <option value="orbea">Orbea</option>
+              <option value="cannondale">Cannondale</option>
+              <option value="bmc">BMC</option>
+              <option value="canyon">Canyon</option>
+              <option value="look">Look</option>
+              <option value="protek">Protek</option>
+              <option value="megamo">Megamo</option>
+              <option value="pinarello">Pinarello</option>
+              <option value="bianchi">Bianchi</option>
+              <option value="bh">BH</option>
+              <option value="factor">Factor</option>
+              <option value="ghost">Ghost</option>
+              <option value="cervelo">Cervélo</option>
+              <option value="argon">Argon</option>
+            </datalist>
+          </p>
+        </fieldset>        
+        <p><input type="submit" value="Enviar" tabindex="18"><input type="reset" tabindex="19"></p>
+      </form>
+    </article>
+  </section>
+</body>
+
+</html>

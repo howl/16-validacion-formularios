@@ -1,0 +1,15 @@
+#formularios {
+  position: relative;
+}
+
+#club {
+  position: absolute;
+  width: 49%;
+}
+
+#bicicleta {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 49%;
+}
