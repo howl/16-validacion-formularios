@@ -23,41 +23,67 @@
         <fieldset>
           <legend>Datos personales:</legend>
           <p>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Pon tu nombre" tabindex="1" autofocus>
+            <span>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Pon tu nombre" tabindex="1" autofocus>
+              <span class="error"></span>
+            </span>
           </p>
           <p>
-            <label for="apellidos">Apellidos:</label>
-            <input type="text" id="apellidos" name="apellidos" placeholder="Pon tus apellidos" tabindex="2">
+            <span>
+              <label for="apellidos">Apellidos:</label>
+              <input type="text" id="apellidos" name="apellidos" placeholder="Pon tus apellidos" tabindex="2">
+              <span class="error"></span>
+            </span>
           </p>
           <p>
-            <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad" placeholder="Pon tu edad" tabindex="3">
-          </p>
-          <p>Sexo:
-            <input type="radio" id="masculino" name="sexo" tabindex="4">
-            <label for="masculino">M</label>
-            <input type="radio" id="femenino" name="sexo">
-            <label for="femenino">F</label>
+            <span>
+              <label for="edad">Edad:</label>
+              <input type="number" id="edad" name="edad" placeholder="Pon tu edad" tabindex="3">
+              <span class="error"></span>
+            </span>
           </p>
           <p>
-            <label for="club">Me siento del club:</label>
-            <input type="checkbox" id="club" name="club" value="si" tabindex="5">
+            <span>Sexo:
+              <input type="radio" id="masculino" name="sexo" tabindex="4">
+              <label for="masculino">M</label>
+              <input type="radio" id="femenino" name="sexo">
+              <label for="femenino">F</label>
+              <span class="error"></span>
+            </span>
           </p>
           <p>
-            <label for="sobreTi">Cuéntanos sobre ti:</label><br>
-            <textarea id="sobreTi" name="sobre-ti" rows="10" cols="33" placeholder="Escribe aquí sobre ti"
-              tabindex="6"></textarea>
+            <span>
+              <label for="club">Me siento del club:</label>
+              <input type="checkbox" id="club" name="club" value="si" tabindex="5">
+              <span class="error"></span>
+            </span>
+          </p>
+          <p>
+            <span>
+              <label for="sobreTi">Cuéntanos sobre ti:</label><br>
+              <textarea id="sobreTi" name="sobre-ti" rows="10" cols="33" placeholder="Escribe aquí sobre ti"
+                tabindex="6"></textarea>
+              <span class="error"></span>
+            </span>
           </p>
         </fieldset>
         <br>
         <fieldset>
           <legend>Datos de contacto:</legend>
-          <p><label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" name="correo" placeholder="Pon tu correo electrónico" tabindex="7">
+          <p>
+            <span>
+              <label for="correo">Correo electrónico:</label>
+              <input type="email" id="correo" name="correo" placeholder="Pon tu correo electrónico" tabindex="7">
+              <span class="error"></span>
+            </span>
           </p>
-          <p><label for="telefono">Telefono:</label>
-            <input type="tel" id="telefono" name="telefono" tabindex="8">
+          <p>
+            <span>
+              <label for="telefono">Telefono:</label>
+              <input type="tel" id="telefono" name="telefono" tabindex="8">
+              <span class="error"></span>
+            </span>
           </p>
         </fieldset>
         <p><input type="submit" value="Enviar" tabindex="9"><input type="reset" tabindex="10"></p>

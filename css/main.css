@@ -2,6 +2,33 @@
   box-sizing: border-box;
 }
 
+form span {
+  position: relative;
+}
+
+.error::before {
+  content: '🚫';
+  padding-right: 0.2em;
+}
+
+.error {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 182, 193, 0.5);
+  font-size: 0.7em;
+  color: darkred;
+  border-radius: 3px;
+  border: 1px solid red;
+  padding: 0.2em;
+  transform: translate(calc(-0.2em - 1px), 75%);
+}
+
+.visible {
+  visibility: visible;
+}
+
 #formularios {
   position: relative;
 }
