@@ -51,6 +51,14 @@ const validarFormulario1 = ({ nombre, apellidos, edad, masculino, femenino, club
     }
   });
 
+  cartelError = masculino.parentNode.lastElementChild;
+  cartelError.classList.remove('visible');
+  if (!masculino.checked && !femenino.checked) {
+    cartelError.replaceChildren(document.createTextNode('Hay que marcar un género.'));
+    cartelError.classList.add('visible');
+    correcto = false;
+  }
+
   cartelError = edad.parentNode.lastElementChild;
   cartelError.classList.remove('visible');
   if (edad.value < 18) {
