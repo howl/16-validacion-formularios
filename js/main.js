@@ -40,7 +40,7 @@ const validarFormulario1 = ({ nombre, apellidos, edad, masculino, femenino, club
     Usando some tengo la posibilidad de hacer la la lógica que quiera y en un momento dado retornar true para salir.
     También está la opción de usar every y devolver false para salir poniendo return true al final del bloque de callback.
   */
-  [nombre, apellidos, correo, telefono].some(elemento => {
+  [nombre, apellidos, correo, telefono].forEach(elemento => {
     elemento.classList.remove('error');
     cartelError = elemento.parentElement.lastElementChild;
     cartelError.classList.remove('visible');
