@@ -29,17 +29,37 @@ form span {
   visibility: visible;
 }
 
-#formularios {
-  position: relative;
+.flexContainer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.flexItem {
+  flex-grow: 1;
+  flex-basis: 45%;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.gridItem {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
 }
 
 #clubForm {
-  position: absolute;
-  width: 50%;
+  background-color: cornsilk;
 }
 
 #roboForm {
-  position: absolute;
-  right: 0;
-  width: 50%;
+  background-color: floralwhite;
 }
